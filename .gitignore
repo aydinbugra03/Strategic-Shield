@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+node_modules/
+dashboard/node_modules/
+synthetic_data.csv
+models/
+schedule.json
