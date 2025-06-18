@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data
+synthetic_data.csv
+failure_model.joblib
+schedule.json
+simulation_report.json
+
+# Node
+node_modules/
+/build
