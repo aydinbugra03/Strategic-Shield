@@ -5,6 +5,7 @@
 -- Drop tables if they exist to allow re-running the script
 DROP TABLE IF EXISTS Allocation;
 DROP TABLE IF EXISTS SiteMissileInventory;
+DROP TABLE IF EXISTS MissileInventory;
 DROP TABLE IF EXISTS ScenarioTarget;
 DROP TABLE IF EXISTS Scenario;
 DROP TABLE IF EXISTS Target;
@@ -53,6 +54,13 @@ CREATE TABLE SiteMissileInventory (
     type_id INTEGER NOT NULL REFERENCES MissileType(type_id),
     stock   INTEGER NOT NULL,
     PRIMARY KEY (site_id, type_id)
+);
+
+-- Overall missile inventory by type
+CREATE TABLE MissileInventory (
+    type_id     INTEGER NOT NULL REFERENCES MissileType(type_id),
+    total_stock INTEGER NOT NULL,
+    PRIMARY KEY (type_id)
 );
 
 -- Results of an optimization allocation run
