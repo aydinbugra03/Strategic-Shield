@@ -11,8 +11,8 @@ DROP TABLE IF EXISTS DeploymentSite;
 CREATE TABLE DeploymentSite (
     site_id   SERIAL PRIMARY KEY,
     name      VARCHAR(255) NOT NULL,
-    x_coord   DECIMAL      NOT NULL,
-    y_coord   DECIMAL      NOT NULL,
+    x_coord   DECIMAL(8, 4) NOT NULL,
+    y_coord   DECIMAL(8, 4) NOT NULL,
     capacity  INTEGER      NOT NULL,
     priority  INTEGER      NOT NULL
 );
@@ -29,8 +29,9 @@ CREATE TABLE MissileType (
 -- Targets
 CREATE TABLE Target (
     target_id SERIAL PRIMARY KEY,
-    x_coord   DECIMAL NOT NULL,
-    y_coord   DECIMAL NOT NULL,
+    name      VARCHAR(255) NOT NULL,
+    x_coord   DECIMAL(8, 4) NOT NULL,
+    y_coord   DECIMAL(8, 4) NOT NULL,
     priority  INTEGER NOT NULL
 );
 

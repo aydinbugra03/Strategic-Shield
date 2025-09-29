@@ -1,0 +1,14 @@
+.run-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.run-button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+} 

@@ -1,0 +1,20 @@
+.scenario-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scenario-selector label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+.scenario-selector select {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #bdc3c7;
+  background: white;
+  min-width: 300px;
+} 
